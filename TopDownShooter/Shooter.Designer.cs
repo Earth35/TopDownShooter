@@ -32,15 +32,15 @@
             this.lblAmmo = new System.Windows.Forms.Label();
             this.lblKills = new System.Windows.Forms.Label();
             this.lblHealth = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.pbHealthBar = new System.Windows.Forms.ProgressBar();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.player = new System.Windows.Forms.PictureBox();
+            this.Player = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tmrMain = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,12 +77,12 @@
             this.lblHealth.TabIndex = 2;
             this.lblHealth.Text = "Health:";
             // 
-            // progressBar1
+            // pbHealthBar
             // 
-            this.progressBar1.Location = new System.Drawing.Point(726, 9);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(186, 22);
-            this.progressBar1.TabIndex = 3;
+            this.pbHealthBar.Location = new System.Drawing.Point(726, 9);
+            this.pbHealthBar.Name = "pbHealthBar";
+            this.pbHealthBar.Size = new System.Drawing.Size(186, 22);
+            this.pbHealthBar.TabIndex = 3;
             // 
             // pictureBox1
             // 
@@ -106,15 +106,15 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Tag = "zombie";
             // 
-            // player
+            // Player
             // 
-            this.player.Image = global::TopDownShooter.Properties.Resources.up;
-            this.player.Location = new System.Drawing.Point(319, 301);
-            this.player.Name = "player";
-            this.player.Size = new System.Drawing.Size(71, 100);
-            this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.player.TabIndex = 6;
-            this.player.TabStop = false;
+            this.Player.Image = global::TopDownShooter.Properties.Resources.up;
+            this.Player.Location = new System.Drawing.Point(319, 301);
+            this.Player.Name = "Player";
+            this.Player.Size = new System.Drawing.Size(71, 100);
+            this.Player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Player.TabIndex = 6;
+            this.Player.TabStop = false;
             // 
             // pictureBox4
             // 
@@ -138,12 +138,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(924, 662);
+            this.ClientSize = new System.Drawing.Size(914, 662);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.player);
+            this.Controls.Add(this.Player);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.pbHealthBar);
             this.Controls.Add(this.lblHealth);
             this.Controls.Add(this.lblKills);
             this.Controls.Add(this.lblAmmo);
@@ -153,7 +153,7 @@
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -165,10 +165,10 @@
         private System.Windows.Forms.Label lblAmmo;
         private System.Windows.Forms.Label lblKills;
         private System.Windows.Forms.Label lblHealth;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar pbHealthBar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox player;
+        private System.Windows.Forms.PictureBox Player;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Timer tmrMain;
     }
