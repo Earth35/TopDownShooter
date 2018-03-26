@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblAmmo = new System.Windows.Forms.Label();
             this.lblKills = new System.Windows.Forms.Label();
             this.lblHealth = new System.Windows.Forms.Label();
@@ -36,6 +37,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.player = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.tmrMain = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
@@ -125,6 +127,12 @@
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Tag = "zombie";
             // 
+            // tmrMain
+            // 
+            this.tmrMain.Enabled = true;
+            this.tmrMain.Interval = 17;
+            this.tmrMain.Tick += new System.EventHandler(this.Engine);
+            // 
             // Shooter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -141,6 +149,8 @@
             this.Controls.Add(this.lblAmmo);
             this.Name = "Shooter";
             this.Text = "Shooter";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
@@ -160,6 +170,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox player;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Timer tmrMain;
     }
 }
 
