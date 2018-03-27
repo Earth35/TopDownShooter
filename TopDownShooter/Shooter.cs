@@ -229,14 +229,14 @@ namespace TopDownShooter
             Player.BringToFront();
         }
 
-        private void Shoot(string direction)
+        private void Shoot(string dir)
         {
             // this code is extra retarded
             // simplify it for god's sake
             Bullet shot = new Bullet();
-            shot.Direction = direction;
-            shot.BulletLeft = Player.Left + (Player.Width / 2);
-            shot.BulletTop = Player.Top + (Player.Height / 2);
+            shot.direction = dir;
+            shot.bulletLeft = Player.Left + (Player.Width / 2);
+            shot.bulletTop = Player.Top + (Player.Height / 2);
             shot.MakeBullet(this);
         }
 
